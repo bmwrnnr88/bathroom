@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bathroom Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Student Bathroom Tracker</h1>
+        <input type="text" id="studentName" placeholder="Enter your name" autofocus>
+        <button id="clockInButton" onclick="clockIn()">Headed to the Powder Room</button>
+        <button id="clockOutButton" onclick="clockOut()" disabled>Refreshed and Ready to Go!</button>
+        <div id="timerDisplay" class="timer">00:00:00</div>
+        <div id="animationContainer" class="hidden">
+            <img src="toilet-spinning.gif" alt="Toilet Spinning" id="toiletAnimation">
+        </div>
+        <div id="log"></div>
+        <h2>User History</h2>
+        <div id="historyLog"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
